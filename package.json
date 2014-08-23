@@ -1,6 +1,6 @@
 {
   "name": "writegif",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Take an image read by http://npm.im/readimage and write into a gif.",
   "main": "writegif.js",
   "directories": {
