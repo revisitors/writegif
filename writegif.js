@@ -3,12 +3,16 @@ var concat = require("terminus").concat
 
 module.exports = writegif
 
+// something with GifEncoder isn't correctly resetting the
+// state of backpressure it seems like?
+var hwm = 128 * 100 * 1024 // HUGE
+
 function writegif(image, callback) {
   var out = concat(function (buffer) {
     callback(null, buffer)
   })
 
-  var gif = new GifEncoder(image.width, image.height)
+  var gif = new GifEncoder(image.width, image.height, {highWaterMark: hwm})
 
   gif.pipe(out)
 
