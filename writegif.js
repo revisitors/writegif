@@ -20,10 +20,10 @@ function writegif(image, callback) {
   }
 
   image.frames.forEach(function (frame) {
-    gif.addFrame(frame.data)
     if (frame.delay) {
       gif.setDelay(frame.delay)
     }
+    gif.addFrame(frame.data)
   })
 
 
