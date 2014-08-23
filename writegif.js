@@ -7,8 +7,8 @@ module.exports = writegif
 // state of backpressure it seems like?
 var hwm = 128 * 100 * 1024 // HUGE
 
-// default = 10, 20 = terrible :(
-var quality = 20
+// default = 10, 200 is maybe a bit smaller sometimes
+var quality = 200
 
 function writegif(image, callback) {
   var out = concat(function (buffer) {
