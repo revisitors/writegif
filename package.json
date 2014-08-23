@@ -1,0 +1,37 @@
+{
+  "name": "writegif",
+  "version": "0.0.0",
+  "description": "Take an image read by http://npm.im/readimage and write into a gif.",
+  "main": "writegif.js",
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node test/"
+  },
+  "keywords": [
+    "gif",
+    "image",
+    "write",
+    "output"
+  ],
+  "author": "Bryce B. Baril",
+  "license": "MIT",
+  "devDependencies": {
+    "readimage": "^1.0.0",
+    "tape": "^2.14.0"
+  },
+  "dependencies": {
+    "gif-encoder": "^0.4.1",
+    "terminus": "^1.0.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:revisitors/writegif.git"
+  },
+  "bugs": {
+    "url": "https://github.com/revisitors/writegif/issues"
+  },
+  "homepage": "https://github.com/revisitors/writegif"
+}
