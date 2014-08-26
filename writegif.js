@@ -9,7 +9,7 @@ var hwm = 128 * 100 * 1024 // HUGE
 
 function writegif(image, opts, callback) {
   if (!callback) { callback = opts; opts = {}; }
-  
+
   var out = concat(function (buffer) {
     callback(null, buffer)
   })
