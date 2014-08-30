@@ -28,6 +28,19 @@ API
 
 Write a buffer that represents a gif image generated from the imageBuffer.
 
+`require("writegif")(imageBuffer, options, callback)`
+---
+
+The same as above, but `options` can contain:
+
+```js
+{
+  // 1: Best colors, worst performance
+  // 200: default, worst colors, best performance
+  quality: 10
+}
+```
+
 LICENSE
 =======
 
